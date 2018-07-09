@@ -7,6 +7,21 @@ import org.hibernate.Session;
 
 /**
  * Example 1: Inneficient Computation
+ *
+ * "The poorly performing code conducts useful computation but inefficiently"
+ *
+ * "Inefficient queries. The same operation on persistent data can be
+ * implemented via different ORM calls. However, the performance of the
+ * generated queries can be drastically different."
+ *
+ * "Moving computation to the DBMS. As the ORM framework hides the details of
+ * query generation, developers often write code that results in multiple
+ * queries being generated."
+ *
+ * "Moving computation to the server. Interestingly, there are cases where the
+ * computation should be moved to the server from the DBMS."
+ *
+ * This class shows an example of **moving computation to the DBMS**.
  */
 public class InefficientComputation {
 
