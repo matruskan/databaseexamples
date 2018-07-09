@@ -4,7 +4,6 @@ import com.matruskan.databaseexamples.entities.Author;
 import com.matruskan.databaseexamples.entities.Document;
 import com.matruskan.databaseexamples.persistence.HSQLDBServer;
 import com.matruskan.databaseexamples.persistence.HibernateSession;
-import java.io.File;
 import java.util.Date;
 import org.hibernate.Session;
 import org.junit.After;
