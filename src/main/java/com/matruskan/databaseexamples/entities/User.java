@@ -35,10 +35,9 @@ import javax.persistence.OneToOne;
 
 /**
  *
- * @author Matheus
  */
 @Entity
-public class User implements Serializable {
+public class User implements Serializable, LinkableEntity {
 
     @Id
     @GeneratedValue
@@ -55,6 +54,7 @@ public class User implements Serializable {
     public User() {
     }
 
+    @Override
     public Long getId() {
         return id;
     }

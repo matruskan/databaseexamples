@@ -35,7 +35,7 @@ import javax.persistence.OneToMany;
  *
  */
 @Entity
-public class Author implements Serializable {
+public class Author implements Serializable, LinkableEntity {
 
     @Id
     @GeneratedValue
@@ -48,6 +48,7 @@ public class Author implements Serializable {
     public Author() {
     }
 
+    @Override
     public Long getId() {
         return id;
     }

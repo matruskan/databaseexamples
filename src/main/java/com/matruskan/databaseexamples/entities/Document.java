@@ -36,7 +36,7 @@ import javax.persistence.ManyToOne;
  *
  */
 @Entity
-public class Document implements Serializable {
+public class Document implements Serializable, LinkableEntity {
 
     @Id
     @GeneratedValue
@@ -50,6 +50,7 @@ public class Document implements Serializable {
     public Document() {
     }
 
+    @Override
     public Long getId() {
         return id;
     }
