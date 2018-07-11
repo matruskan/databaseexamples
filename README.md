@@ -19,4 +19,5 @@ that results in multiple queries being generated."
 cases where the computation should be moved to the server from
 the DBMS."
 
-The [InefficientComputation.java](src/main/java/com/matruskan/databaseexamples/InefficientComputation.java) example shows an example of **moving computation to the DBMS**.
+The [InefficientComputation.java](src/main/java/com/matruskan/databaseexamples/InefficientComputation.java)
+class shows an example of **moving computation to the DBMS**.
