@@ -34,7 +34,23 @@ import java.util.List;
 import org.hibernate.Session;
 
 /**
- * 2. Unnecessary Computation
+ * Example 2: Unnecessary Computation
+ *
+ * "More than 10% of the performance issues are caused by (mis)using ORM APIs
+ * that lead to unnecessary queries being issued."
+ *
+ * "**Loop-invariant queries**. Sometimes, queries are repeatedly issued to load
+ * the same database contents and hence are unnecessary."
+ *
+ * "**Dead-store queries**. In such cases, queries are repeatedly issued to load
+ * different database contents into the same memory object while the object has
+ * not been used between the reloads.
+ *
+ * "**Queries with known results**. A number of issues are due to issuing
+ * queries whose results are already known, hence incurring unnecessary network
+ * round trips and query processing time.
+ *
+ * This class shows an example of **loop-invariant queries**.
  */
 public class UnnecessaryComputation {
 
