@@ -63,3 +63,11 @@ into one update."
 The [InefficientDataAccessing.java](src/main/java/com/matruskan/databaseexamples/InefficientDataAccessing.java)
 class shows an example of **inefficient lazy loading**, and an example of
 **inefficient eager loading**.
+
+## 4. Unnecessary Data Retrieval
+
+"Unnecessary data retrieval happens when software retrieves
+persistent data that is not used later."
+
+The [UnnecessaryDataRetrieval.java](src/main/java/com/matruskan/databaseexamples/UnnecessaryDataRetrieval.java)
+class shows an example of that.
