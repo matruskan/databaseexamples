@@ -43,7 +43,7 @@ public class Author implements Serializable, LinkableEntity {
     private String name;
     private String imgUrl;
     @OneToMany(mappedBy="author")
-    private Set<Document> documentos;
+    private Set<Document> documents;
 
     public Author() {
     }
@@ -73,12 +73,12 @@ public class Author implements Serializable, LinkableEntity {
         this.imgUrl = imgUrl;
     }
 
-    public Set<Document> getDocumentos() {
-        return documentos;
+    public Set<Document> getDocuments() {
+        return documents;
     }
 
-    public void setDocumentos(Set<Document> documentos) {
-        this.documentos = documentos;
+    public void setDocuments(Set<Document> documents) {
+        this.documents = documents;
     }
 
     @Override
