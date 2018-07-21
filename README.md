@@ -38,3 +38,28 @@ unnecessary network round trips and query processing time.
 
 The [UnnecessaryComputation.java](src/main/java/com/matruskan/databaseexamples/UnnecessaryComputation.java)
 class shows an example of **loop-invariant queries**.
+
+## 3. Inefficient Data Accessing
+
+"Problems under this category suffer from data transfer slow
+downs, including not batching data transfers (e.g., the well-known
+“N+1” problem) or batching too much data into one transfer."
+
+- "**Inefficient lazy loading**. [...] when a set
+of objects O in table T1 are requested, objects stored in table T2
+associated with T1 and O can be loaded together through eager
+loading. If lazy loading is chosen instead, one query will be issued
+to load N objects from T1, and then N separate queries have to
+be issued to load associations of each such object from T2. This is
+known as the “N+1” query problem."
+- "**Inefficient eager loading**. However, always loading data eagerly
+can also cause problems. Specifically, when the associated
+objects are too large, loading them all at once will create huge
+memory pressure and even make the application unresponsive."
+- "**Inefficient updating**. Like the “N+1” problem, developers would
+issue N queries to update N records separately rather than merging them
+into one update."
+
+The [InefficientDataAccessing.java](src/main/java/com/matruskan/databaseexamples/InefficientDataAccessing.java)
+class shows an example of **inefficient lazy loading**, and an example of
+**inefficient eager loading**.
